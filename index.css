@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{ /* aonde fica a logo e os demais */
+    height: 75px;
+    display: flex;
+    align-items: center ;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.8)
+}
+
+body{ /* fundo */ 
+    background-image: url(./img/fundodeFIlmes.jpg);
+    width: cover;
+}
+
+nav { /* quadrado das escritas do header */
+    width: 100%;
+    display: flex;
+}
+
+ul { /* posição das escritas header */
+    display: flex;
+    margin-left: 67%;
+    width: 30%;
+    justify-content:space-between
+}
+
+li{ /* estilização das escritas do header */
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 0.2s;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+li:hover{
+    color: rgba(255, 0, 0);
+}
+
+.ins{
+    color: rgb(255, 0, 0);
+}
+
+.ins:hover{
+    color: white;
+}
+
+#logo { /* logo do header*/
+    width: 140px;
+    height: auto;
+    margin-left: 20%;
+}
+
+h2{
+    display: flex;
+    justify-content: left;
+    margin-top: 3px;
+    margin-left: 25px;
+}
+
+
+.a{
+    font-family: sans-serif;
+    font-style: bold;
+    color: white;
+    font-size: 55px;
+}
+
+h3{
+    display: flex;
+    margin-left: 28px;
+}
+
+.b{
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+
+.form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0px;
+    margin-left: 28px;
+}
+
+.fundo{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.781);
+    justify-content: left;
+    width: 290px;
+    height: 340px;
+    margin-top: 125px;
+    margin-left: 20px;
+    border-radius: 25px;
+}
+
+.input-email{
+    margin-bottom: 5px;
+    width: 68%;
+    padding: 8px 0 5px 32px;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-password{
+    width: 68%;
+    padding: 8px 0 5px 32px;
+    border: none;
+    border-radius: 5px;
+}
+
+.label-email{
+    margin: 0 0 -12px;
+    color: white;
+    font-family: sans-serif;
+    font-style: bold;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.label-pass{
+    margin: 0 0 -12px;
+    color: white;
+    font-family: sans-serif;
+    font-style: bold;
+    font-weight: 600;
+}
+
+.input-email:placeholder{
+    display: flex;
+    align-items:flex-start
+
+}
+
+.form i{
+    color: black;
+    font: 16px;
+    transform: translateX(8px) translateY(23px);
+}
+
+.forgot{
+    font-family: sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    font-style: bold;
+    margin: 10px 0px 10px 0;
+    cursor: pointer;
+}
+
+.forgot:hover{
+    color: red;
+}
+
+.button{
+    width: 78%;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    color: white;
+    padding: 8px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    background: linear-gradient(135deg, red, rgb(184, 53, 53))
+}
+
+.button2{
+    width: 78%;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    color: white;
+    padding: 8px;
+    margin-top: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    background: linear-gradient(135deg, red, rgb(184, 53, 53))
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    
+}
+
+.di{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 400;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif 
+     
+}
+
+.fundo-footer{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.781);
+    width: 330px;
+}
+
+.footer-nav{
+    display: none;
+}
+
+@media (max-width: 880px){
+    .footer-nav {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: absolute;
+       z-index: 10;
+    }
+    
+    nav {
+        display: none;
+        width: 1100px;
+        justify-content: space-around;
+        margin-top: 100px;
+        text-align: center;
+        margin-right: 730px;
+    }
+
+    #logo{
+        display: flex;
+        align-items: center;
+        margin-right: 80px;
+    }
+
+    .fundo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 55px;
+        height: 350px
+    }
+
+    h2{
+        margin-right: 105px; 
+    }
+    .form{
+        margin-left: 70px;
+    }
+}
+
+
+
+
+
+
+
+
+
